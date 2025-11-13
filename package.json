@@ -1,7 +1,7 @@
 {
   "name": "@a7mdmo74/bun-react-ssr",
-  "version": "1.0.2",
-  "description": "A Bun-based React server-side rendering starter with Tailwind CSS and Radix UI components",
+  "version": "2.0.1",
+  "description": "A full-stack Bun framework combining React SSR, backend APIs, middleware, and Tailwind CSS with shadcn UI components",
   "author": "a7mdmo74",
   "license": "MIT",
   "keywords": [
@@ -9,11 +9,18 @@
     "react",
     "ssr",
     "server-side-rendering",
+    "full-stack",
+    "fullstack",
+    "backend",
+    "api",
+    "middleware",
     "tailwind",
     "tailwindcss",
-    "radix-ui",
+    "shadcn",
+    "shadcn-ui",
     "typescript",
-    "javascript"
+    "javascript",
+    "framework"
   ],
   "repository": {
     "type": "git",

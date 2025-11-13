@@ -61,6 +61,20 @@ await init();
 const server = Bun.serve({
   port: 3000,
   async fetch(req) {
+    const { pathname } = new URL(req.url);
+    if (pathname === "/api/quote") {
+      const res = await fetch("https://dummyjson.com/quotes");
+      const data = await res.json();
+
+      const quotes = data.quotes;
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      const randomQuote = quotes[randomIndex];
+
+      return new Response(JSON.stringify(randomQuote), {
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+
     const buildFileRequest = serveBuild(req);
     const startTime = Date.now();
     const staticResponse = await serveStatic(req);
