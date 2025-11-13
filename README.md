@@ -2,6 +2,8 @@
 
 A modern server-side rendering (SSR) starter template built with [Bun](https://bun.com), React, Tailwind CSS, and Radix UI components.
 
+**Repository**: [github.com/a7mdmo74/Bun-React-SSR](https://github.com/a7mdmo74/Bun-React-SSR)
+
 ## Features
 
 - ⚡ **Bun Runtime** - Lightning-fast JavaScript runtime
@@ -63,7 +65,7 @@ bun run tailwind:build
 
 ## Project Structure
 
-```
+```text
 .
 ├── src/
 │   ├── components/     # React components
